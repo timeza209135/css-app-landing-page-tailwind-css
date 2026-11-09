@@ -7,69 +7,171 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="min-h-screen bg-[#0d111d] flex items-center justify-center p-2">
-
-    <section class="w-full max-w-[1120px] rounded-[18px] bg-[#f7f7fc] px-6 py-10 md:px-[92px]">
+  <body class="bg-[#F6F6FB]">
+    <!-- Main Container ครอบเนื้อหาทั้งหมดให้แชร์โครงสร้างจัดกลางร่วมกัน -->
+    <div class="max-w-[1440px] mx-auto p-6 flex flex-col gap-2.5">
   
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-  
-        <!-- Card 1 -->
-        <div class="rounded-[20px] bg-[#d9e5f8] p-[22px] min-h-[210px]">
-  
-          <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
-            <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21 3c-5.5 0-10 1.8-12.8 5.1-2 2.3-2.8 5-2.5 7.5l-2.5 2.5 2.7 2.7 2.5-2.5c2.5.3 5.2-.5 7.5-2.5C21.2 13 23 8.5 23 3h-2zM9 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
-            </svg>
-          </div>
-  
-          <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
-            Streamlined Workflows
-          </h3>
-  
-          <p class="text-[13px] leading-[19px] text-[#646b7d]">
-            Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
-          </p>
+      <!-- Navbar Layout -->
+      <nav class="flex justify-between items-center py-3 px-20 rounded-[99px] bg-white shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
+        <h2 id="Title" class="relative inline-block text-2xl font-bold text-black">
+          Acme<span class="absolute top-1 -right-3 w-2 h-2 bg-[#5E44FF] rounded-full"></span>
+        </h2>
+        <div class="bar class flex justify-around items-center gap-5 text-base text-gray-600 font-medium">
+          <span id="Home" class="cursor-pointer hover:text-[#5E44FF] hover:underline transition-colors">Home</span>
+          <span id="Features" class="cursor-pointer hover:text-[#5E44FF] hover:underline transition-colors">Features</span>
+          <span id="Pricing" class="cursor-pointer hover:text-[#5E44FF] hover:underline transition-colors">Pricing</span>
+          <span id="Contact" class="cursor-pointer hover:text-[#5E44FF] hover:underline transition-colors">Contact</span>
         </div>
+      </nav>
   
-        <!-- Card 2 -->
-        <div class="rounded-[20px] bg-[#dce0ff] p-[22px] min-h-[210px]">
-  
-          <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
-            <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M4 3h16v14H4V3zm3 11 3-4 2 2 4-5-1.5-1.2-2.7 3.4-2-2L5.5 13 7 14zM2 19h20v2H2v-2z"/>
-            </svg>
-          </div>
-  
-          <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
-            Blazing Fast Performance
-          </h3>
-  
-          <p class="text-[13px] leading-[19px] text-[#646b7d]">
-            Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
-          </p>
+      <!-- Hero Section -->
+      <div class="content class flex flex-col justify-center items-center py-[100px] px-6 text-center gap-6">
+        
+        <div class="rainbow class flex items-center justify-center bg-[#563AFF1A] py-2 px-5 rounded-[999px] text-[#5E44FF] text-sm font-medium h-10 gap-4">
+          <p>🌈 Acme productivity app</p>
         </div>
-  
-        <!-- Card 3 -->
-        <div class="rounded-[20px] bg-[#eadef7] p-[22px] min-h-[210px]">
-  
-          <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
-            <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-3.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM12 17c-2 0-3.6-1.2-4.3-3h8.6c-.7 1.8-2.3 3-4.3 3z"/>
-            </svg>
-          </div>
-  
-          <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
-            Intuitive Interface
-          </h3>
-  
-          <p class="text-[13px] leading-[19px] text-[#646b7d]">
-            Our user-friendly interface makes it easy for anyone to streamline their workflow.
-          </p>
-        </div>
-  
+        
+        <h1 class="Boost class text-[80px] font-extrabold text-[#1E1B4B] tracking-tight leading-none">
+          Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+        </h1>
+        
+        <h4 class="Stream class text-2xl text-gray-600 font-normal max-w-2xl">
+          Streamline your workflow with our all-in-one productivity app
+        </h4>
+        
+        <button class="start-button w-[187px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring focus:ring-[#5F5F76] text-base font-medium transition-colors duration-200" type="button">
+          Start Free Trial
+        </button>
+        
       </div>
-    </section>
-  
+
+      <!-- Features Cards Section (ย้ายเข้ามาอยู่ใน Container หลัก และเพิ่ม mx-auto) -->
+      <section class="w-full max-w-[1120px] rounded-[18px] bg-[#f7f7fc] px-6 py-10 md:px-[92px] mx-auto">
+    
+        <!-- แก้ไขจุดที่ลืมปิดเครื่องหมาย > เรียบร้อยแล้ว -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    
+          <!-- Card 1 -->
+          <div class="rounded-[20px] bg-[#d9e5f8] p-[22px] min-h-[210px]">
+    
+            <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
+              <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21 3c-5.5 0-10 1.8-12.8 5.1-2 2.3-2.8 5-2.5 7.5l-2.5 2.5 2.7 2.7 2.5-2.5c2.5.3 5.2-.5 7.5-2.5C21.2 13 23 8.5 23 3h-2zM9 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+              </svg>
+            </div>
+    
+            <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
+              Streamlined Workflows
+            </h3>
+    
+            <p class="text-[13px] leading-[19px] text-[#646b7d]">
+              Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
+            </p>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="rounded-[20px] bg-[#dce0ff] p-[22px] min-h-[210px]">
+    
+            <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
+              <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 3h16v14H4V3zm3 11 3-4 2 2 4-5-1.5-1.2-2.7 3.4-2-2L5.5 13 7 14zM2 19h20v2H2v-2z"/>
+              </svg>
+            </div>
+    
+            <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
+              Blazing Fast Performance
+            </h3>
+    
+            <p class="text-[13px] leading-[19px] text-[#646b7d]">
+              Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
+            </p>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="rounded-[20px] bg-[#eadef7] p-[22px] min-h-[210px]">
+    
+            <div class="w-12 h-12 rounded-xl bg-white/70 flex items-center justify-center mb-7">
+              <svg class="w-6 h-6 text-[#6545ff]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-3.5 8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM12 17c-2 0-3.6-1.2-4.3-3h8.6c-.7 1.8-2.3 3-4.3 3z"/>
+              </svg>
+            </div>
+    
+            <h3 class="text-[18px] font-bold text-[#171a2b] mb-2">
+              Intuitive Interface
+            </h3>
+    
+            <p class="text-[13px] leading-[19px] text-[#646b7d]">
+              Our user-friendly interface makes it easy for anyone to streamline their workflow.
+            </p>
+          </div>
+    
+        </div>
+      </section>
+
+      <!-- Get in Touch Section -->
+      <main class="main-container w-full flex justify-center pt-[46px] px-5 pb-0">
+    
+        <section class="contact-card w-full max-w-[765px] min-h-auto sm:min-h-[425px] bg-white rounded-3xl flex flex-col items-center py-10 px-5 sm:py-12">
+    
+          <h1 class="m-0 mb-6 text-2xl sm:text-3xl text-[#1A1A2C] font-bold">Get in Touch</h1>
+    
+          <form class="contact-form w-full max-w-[589px] flex flex-col gap-3.5">
+    
+            <div class="form-group flex flex-col gap-1">
+              <label for="name" class="text-[11px] text-[#66667c]">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                class="w-full h-auto p-3 border border-[#E0E0ED] hover:border-[#B5A9FF] focus:border-[#5E44FF] rounded-lg text-[11px] text-[#191927] placeholder-[#9999b0] focus:outline-none transition-colors"
+              />
+            </div>
+            
+            <div class="form-group flex flex-col gap-1">
+              <label for="email" class="text-[11px] text-[#66667c]">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="john@example.com"
+                class="w-full h-auto p-3 border border-[#E0E0ED] hover:border-[#B5A9FF] focus:border-[#5E44FF] rounded-lg text-[11px] text-[#191927] placeholder-[#9999b0] focus:outline-none transition-colors"
+              />
+            </div>
+            
+            <div class="form-group flex flex-col gap-1">
+              <label for="message" class="text-[11px] text-[#66667c]">Message</label>
+              <textarea
+                id="message"
+                placeholder="Your message..."
+                class="w-full h-[65px] p-3 border border-[#E0E0ED] hover:border-[#B5A9FF] focus:border-[#5E44FF] rounded-lg font-sans text-[11px] placeholder-[#9999b0] resize focus:outline-none transition-colors"
+              ></textarea>
+            </div>
+    
+            <button type="submit" class="w-[589px] max-w-full mt-2 px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring focus:ring-[#5F5F76] text-[11px] font-bold cursor-pointer transition-colors">
+              Submit
+            </button>
+    
+          </form>
+    
+        </section>
+    
+      </main>
+    
+      <!-- Footer Section -->
+      <footer class="footer w-full max-w-[765px] my-[50px] mx-auto sm:mb-[48px] px-5 sm:px-0 flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-0">
+    
+        <p class="m-0 text-[11px] text-[#55556b]">Acme productivity app ©2024</p>
+    
+        <nav class="footer-links flex gap-[15px] sm:gap-[25px]">
+          <a href="#" class="no-underline text-[11px] font-bold text-[#191927] hover:text-[#5E44FF] hover:underline transition-colors">FAQ</a>
+          <a href="#" class="no-underline text-[11px] font-bold text-[#191927] hover:text-[#5E44FF] hover:underline transition-colors">Terms</a>
+          <a href="#" class="no-underline text-[11px] font-bold text-[#191927] hover:text-[#5E44FF] hover:underline transition-colors">AI Policy</a>
+          <a href="#" class="no-underline text-[11px] font-bold text-[#191927] hover:text-[#5E44FF] hover:underline transition-colors">Pricing</a>
+        </nav>
+    
+      </footer>
+
+    </div>
   </body>
 </html>
+
 
